@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+<style type="text/css">
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		background-image: url(images/6.jpg);
+        background-repeat: none;
+        text-align: left;
+	}
+	h3{
+		margin-top: 50px;
+		padding-left: 30px;
+		font-size: 50px;
+		color: white;
+	}
+	button{
+		border-radius: 2px solid whit;
+		width: 200px;
+		margin-left: 30px;
+		border-radius: 20px;
+		padding: 10px;
+		height: auto;
+	}
+.land{
+            text-align: left;
+            opacity: 0; /* Start with the text hidden */
+            transform: translateY(50px); /* Start the text below */
+            transition: transform 2s ease, opacity 2s ease; /* Smooth transition for both position and opacity */
+        }
+
+        /* When the animation class is added, text moves up and becomes visible */
+        .land.visible {
+            opacity: 1;
+            transform: translateY(0); /* Move the text to its original position */
+        h4{
+        	background-color: white;
+        	margin-left: 25px;
+        	border-radius: 10px;
+        	width: 80px;
+        	padding: 4px;
+
+        }
+        a{
+        	text-decoration: none;
+        	color: black;
+        }
+
+	
+</style>
+
+</head>
+<body>
+	<div class="land">
+		
+		<h3>"The world is full of wonderful things you haven't seen yet. Don't ever give up on the chance of seeing them"</h3>
+
+		<a href="login.html"><h4> Let's Go!</h4></submit></a>  
+	</div>
+	<script>
+        // Wait for the page to load and then trigger the animation
+        window.onload = () => {
+            const land = document.querySelector('.land');
+            // Add the "visible" class to trigger the animation
+            setTimeout(() => {
+                land.classList.add('visible');
+            }, 500); // Delay the animation by 0.5s after page load
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+
+	<style type="text/css">
+
+      *{
+         margin: 0px;
+      }
+		
+      .head li{
+       display: inline-flex;
+       list-style: none;
+       padding-left: 500px;
+       color: white;
+   }	
+   body{
+      height: auto;
+      background-image: url(images/go.jpg);
+      background-repeat: no-repeat;
+   }
+
+   .head li ul{
+      color: white;
+      padding: 4px;
+      margin: 10px;
+   
+   }
+   .head li a{
+      color: white;
+      text-decoration: none ;
+      width: ;
+      
+   }
+      .head{
+         position: sticky;
+         top: 0;
+         padding: 10px 16px;
+         color: white;
+      	background: black;
+      	border-radius: 5px;
+      	border-bottom: 2px solid blue;
+         margin-bottom: 0px;
+         position: fixed;
+         width: 100%;
+      	}
+
+      .head li ul:hover{
+         background-color: white;
+         border-radius: 3px;
+         color: black;
+       	transition: 1s;
+      }
+
+      .land{
+         padding-top: 50px;
+            color: white;
+            font-size: 30px;
+            text-align: left;
+            opacity: 0; /* Start with the text hidden */
+            transform: translateY(50px); /* Start the text below */
+            transition: transform 2s ease, opacity 2s ease; /* Smooth transition for both position and opacity */
+        }
+
+        /* When the animation class is added, text moves up and becomes visible */
+        .land.visible {
+            opacity: 1;
+            transform: translateY(0); /* Move the text to its original position */
+         }
+         .land center h1{
+            color: black;
+            padding-top: 60px;
+         }
+         
+         .main{
+            margin-top: 150px;
+            background-color: black;
+            width: 100%;
+            height: 450px;
+            display: inline-flex;
+         }
+         .main aside{
+            width: 47%;
+            margin: 15px;
+            color: white;
+            text-align: justify;
+            margin-bottom: 10px;
+         }
+   .container {
+      background-color: black;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 20px;
+    border: 1px solid white;
+    margin: 0px;
+}
+
+
+
+footer p{
+   background-color: black;
+   color: white;
+   text-align: center;
+   height: 40px;
+   padding: 7px;
+
+}
+
+	</style>
+
+</head>
+<body>
+
+
+
+   <div class="land">
+   <center><h1>Welcome to Dixcove 
+</h1>
+<h2 style="color: black;">— Your Next Adventure Awaits!</h2>
+</center> 
+</div>
+
+<div class="head">
+   <li>
+   <a href=""><ul>Home</ul></a> 
+   <a href=""><ul>About Us</ul></a> 
+   <a href=""><ul>Gallery</ul></a> 
+   <a href=""><ul>Contact</ul></a> 
+   <a href=""><ul>Help..?</ul></a> 
+  </li>
+</div>
+
+
+
+<footer><p>© Ebenezer Prah 2025</p></footer>
+
+
+
+
+  
+
+
+<script>
+        // Wait for the page to load and then trigger the animation
+        window.onload = () => {
+            const land = document.querySelector('.land');
+            // Add the "visible" class to trigger the animation
+            setTimeout(() => {
+                land.classList.add('visible');
+            }, 500); // Delay the animation by 0.5s after page load
+        };
+    </script>
+</body>
+</html>
